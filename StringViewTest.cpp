@@ -263,7 +263,7 @@ int main(int argc, const char** argv)
 		std::size_t sizes = 0;
 		for (int i = 0; i < ITERS; ++i)
 		{
-			auto v = splitSVStd(testString);
+			auto v = splitSVPtr(testString);
 			sizes += v.size();
 		}
 		return sizes;
